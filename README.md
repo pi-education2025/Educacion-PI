@@ -15,7 +15,6 @@ Bienvenido al curso básico de micro:bit. Este curso está diseñado para introd
 - Computadora con acceso a Internet.
 - (Opcional) Componentes adicionales como LEDs, botones, y motores.
 
-
 # Contenido del Curso
 
 1. **Introducción al micro:bit**
