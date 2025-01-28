@@ -24,7 +24,21 @@ Para comenzar con micro:bit, consulta la guía oficial de introducción en el si
 
 - [Introducción a micro:bit](https://microbit.org/es-es/get-started/getting-started/introduction/)
 
-Esta sección cubre los fundamentos del micro:bit, cómo configurarlo y los primeros pasos para comenzar a programar.
+En esta sección, aprenderás los fundamentos del micro:bit y cómo comenzar a programarlo. Sigue estos pasos básicos para encender tu micro:bit y empezar a crear tus primeros proyectos.
+
+### Contenido
+1. **Introducción**  
+   Aprende qué es el micro:bit, sus características principales y cómo puede ayudarte a explorar el mundo de la programación y la electrónica.
+
+2. **Encender y empezar a programar**  
+   Conecta tu micro:bit a una computadora usando un cable USB. Descubre cómo transferir programas al dispositivo y empezar a interactuar con él.
+
+3. **¡A programar!**  
+   Usa el editor MakeCode para crear tus primeros programas. Experimenta con secuencias, bucles y otros conceptos básicos.
+
+4. **Empezar a enseñar**  
+   Descubre recursos educativos para enseñar con el micro:bit, desde actividades simples hasta proyectos más avanzados.
+
 
 ## Nivel Medio
 
@@ -34,7 +48,7 @@ En este nivel, los estudiantes trabajarán en una serie de proyectos prácticos 
 - [Primeras lecciones con MakeCode y el micro:bit](https://microbit-org.translate.goog/teach/lessons/first-lessons-with-makecode-and-the-microbit/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp)
 
 
-### Proyectos y Temas Cubiertos
+### Contenido
 1. **Identificador de Nombre (Name Badge)**
    - **Objetivo:** Crear un programa que muestre un identificador en la pantalla LED.
    - **Conceptos:** Algoritmos, secuencias, entrada/salida.
