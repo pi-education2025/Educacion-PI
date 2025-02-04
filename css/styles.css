@@ -122,7 +122,7 @@ h3 {
 /* ================================================== */
 .intro-section {
     width: 100%; /* Ancho completo */
-    max-width: 90%; /* Ancho máximo */
+    max-width: 1200px; /* Ancho máximo */
     margin: 0 auto; /* Centra la sección */
 }
 
@@ -173,7 +173,7 @@ h3 {
     display: flex; /* Usa Flexbox para organizar el contenido */
     flex-direction: column; /* Organiza los elementos en columna */
     align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto */
+    text-align: justify; /* justifica el texto */
 }
 
 .grid-container section:hover {
@@ -191,7 +191,7 @@ h3 {
     font-size: 2rem; /* Tamaño de fuente para el texto */
     color: var(--oscuro); /* Color oscuro */
     line-height: 1.6; /* Interlineado */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
+    margin-bottom: 2.5rem; /* Espaciado inferior */
 }
 
 /* ================================================== */
