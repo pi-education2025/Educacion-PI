@@ -1,117 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Básico de micro:bit</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Pi Education</title>
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <!-- Header con el logo y texto -->
     <header>
-        <h1>Curso Básico de micro:bit</h1>
-        <!-- <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#requisitos">Requisitos</a></li>
-                <li><a href="#basico">Nivel Básico</a></li>
-                <li><a href="#medio">Nivel Medio</a></li>
-                <li><a href="#recursos">Recursos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav> -->
+        <div class="header-content">
+            <img src="https://www.pi.com.ve/assets/logo-cea72424.svg" alt="Logo de Pi" class="logo">
+            <div>
+                <p>PI Education</p>
+            </div>
+        </div>
     </header>
 
+    <!-- Contenido principal -->
     <main>
-        <!-- Sección de Inicio -->
-        <section id="inicio">
-            <h2>Bienvenido al Curso de micro:bit</h2>
-            <p>Este curso está diseñado para principiantes que desean aprender a programar y explorar las posibilidades del micro:bit. A lo largo de las lecciones, desarrollarás habilidades en programación y electrónica mediante proyectos prácticos y divertidos.</p>
-        </section>
-
-        <!-- Sección de Introducción -->
-        <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>Bienvenido al curso básico de micro:bit. Este curso está diseñado para introducirte al mundo de la programación y la electrónica utilizando la placa micro:bit. Aprenderás a programar proyectos interactivos y a explorar las capacidades de este dispositivo.</p>
-        </section>
-
-        <!-- Sección de Requisitos -->
-        <section id="requisitos">
-            <h2>Requisitos</h2>
-            <ul>
-                <li>Una placa micro:bit.</li>
-                <li>Cable USB para la conexión.</li>
-                <li>Computadora con acceso a Internet.</li>
-                <li>(Opcional) Componentes adicionales como LEDs, botones, y motores.</li>
-            </ul>
-        </section>
-
-        <!-- Sección de Nivel Básico -->
-        <section id="basico">
-            <h2>Nivel Básico</h2>
-            <p>Para comenzar con micro:bit, consulta la guía oficial de introducción en el siguiente enlace:</p>
-            <a href="https://microbit.org/es-es/get-started/getting-started/introduction/" target="_blank">Introducción a micro:bit</a>
-            <h3>Contenido</h3>
-            <ol>
-                <li><strong>Introducción:</strong> Aprende qué es el micro:bit, sus características principales y cómo puede ayudarte a explorar el mundo de la programación y la electrónica.</li>
-                <li><strong>Encender y empezar a programar:</strong> Conecta tu micro:bit a una computadora usando un cable USB. Descubre cómo transferir programas al dispositivo y empezar a interactuar con él.</li>
-                <li><strong>¡A programar!:</strong> Usa el editor MakeCode para crear tus primeros programas. Experimenta con secuencias, bucles y otros conceptos básicos.</li>
-                <li><strong>Empezar a enseñar:</strong> Descubre recursos educativos para enseñar con el micro:bit, desde actividades simples hasta proyectos más avanzados.</li>
-            </ol>
-        </section>
-
-        <!-- Sección de Nivel Medio -->
-        <section id="medio">
-            <h2>Nivel Medio</h2>
-            <p>En este nivel, los estudiantes trabajarán en una serie de proyectos prácticos diseñados para fortalecer sus habilidades de programación y electrónica con el micro:bit.</p>
-            <a href="https://microbit-org.translate.goog/teach/lessons/first-lessons-with-makecode-and-the-microbit/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp" target="_blank">Primeras lecciones con MakeCode y el micro:bit</a>
-            <h3>Proyectos</h3>
-            <div class="proyecto">
-                <h4>1. Identificador de Nombre (Name Badge)</h4>
-                <p><strong>Objetivo:</strong> Crear un programa que muestre un identificador en la pantalla LED.</p>
-                <p><strong>Conceptos:</strong> Algoritmos, secuencias, entrada/salida.</p>
-            </div>
-            <div class="proyecto">
-                <h4>2. Corazón Latente (Beating Heart)</h4>
-                <p><strong>Objetivo:</strong> Diseñar una animación simple utilizando bucles y secuencias.</p>
-                <p><strong>Conceptos:</strong> Iteración, secuencias, animaciones.</p>
-            </div>
-            <div class="proyecto">
-                <h4>3. Insignia de Emoción (Emotion Badge)</h4>
-                <p><strong>Objetivo:</strong> Usar botones para generar diferentes respuestas en la pantalla LED.</p>
-                <p><strong>Conceptos:</strong> Entrada/salida, selección.</p>
-            </div>
-            <div class="proyecto">
-                <h4>4. Contador de Pasos (Step Counter)</h4>
-                <p><strong>Objetivo:</strong> Usar el acelerómetro para contar pasos y mostrar el total en la pantalla.</p>
-                <p><strong>Conceptos:</strong> Sensores, variables, orden de instrucciones.</p>
-            </div>
-            <div class="proyecto">
-                <h4>5. Luz Nocturna (Nightlight)</h4>
-                <p><strong>Objetivo:</strong> Crear un sistema de control automático para encender o apagar una luz basada en las condiciones de iluminación.</p>
-                <p><strong>Conceptos:</strong> Condicionales, sensores, control de sistemas.</p>
-            </div>
-            <div class="proyecto">
-                <h4>6. Piedra, Papel o Tijera (Rock, Paper, Scissors)</h4>
-                <p><strong>Objetivo:</strong> Programar una simulación del juego de azar usando sensores y lógica condicional avanzada.</p>
-                <p><strong>Conceptos:</strong> Randomización, lógica condicional, evaluación de sistemas.</p>
-            </div>
-        </section>
-
-        <!-- Sección de Recursos Adicionales -->
-        <section id="recursos">
-            <h2>Recursos Adicionales</h2>
-            <ul>
-                <li><a href="https://microbit.org/" target="_blank">Documentación Oficial de micro:bit</a></li>
-                <li><a href="https://makecode.microbit.org/tutorials" target="_blank">Tutoriales en MakeCode</a></li>
-            </ul>
-        </section>
+        <h1>Curso Básico de Micro:bit</h1>
+        
+        <div class="section-container">
+            <!-- Sección de bienvenida -->
+            <section class="intro-section">
+                <h2>Bienvenido al Curso de micro:bit</h2>
+                <p>Este curso está diseñado para principiantes que desean aprender a programar y explorar las posibilidades del micro:bit. A lo largo de las lecciones, desarrollarás habilidades en programación y electrónica mediante proyectos prácticos y divertidos.</p>
+            </section>
+            
+            <!-- Sección de niveles -->
+            <section class="levels">
+                <h2>Niveles del Curso</h2>
+                <div class="grid-container">
+                    <!-- Nivel Básico -->
+                    <section class="basic-level">
+                        <h3>Nivel Básico</h3>
+                        <p>En este nivel aprenderás los fundamentos de Micro:bit y cómo programarlo con bloques.</p>
+                        <a href="#" class="btn" aria-label="Comenzar el Nivel Básico">Comenzar</a>
+                    </section>
+                    
+                    <!-- Nivel Medio -->
+                    <section class="intermediate-level">
+                        <h3>Nivel Medio</h3>
+                        <p>En este nivel exploraremos conceptos más avanzados como el uso de sensores y comunicación inalámbrica.</p>
+                        <a href="#" class="btn" aria-label="Comenzar el Nivel Medio">Comenzar</a>
+                    </section>
+                </div>
+            </section>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>Curso Básico de micro:bit. Todos los derechos reservados.</p>
+        <p>Agropezim Group C.A. RIF: J-404095969</p>
     </footer>
 </body>
+
 </html>
