@@ -5,53 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pi Education</title>
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Header con el logo y texto -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <img src="https://www.pi.com.ve/assets/logo-cea72424.svg" alt="Logo de Pi" class="logo">
-            <div>
-                <p>PI Education</p>
+            <div class="header-text">
+                <p>Educación</p>
             </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
+    <!-- Main content -->
     <main>
-        <h1>Curso Básico de Micro:bit</h1>
-        
-        <div class="section-container">
-            <!-- Sección de bienvenida -->
-            <section class="intro-section">
-                <h2>Bienvenido al Curso de micro:bit</h2>
-                <p>Este curso está diseñado para principiantes que desean aprender a programar y explorar las posibilidades del micro:bit. A lo largo de las lecciones, desarrollarás habilidades en programación y electrónica mediante proyectos prácticos y divertidos.</p>
-            </section>
-            
-            <!-- Sección de niveles -->
-            <section class="levels">
-                <h2>Niveles del Curso</h2>
-                <div class="grid-container">
-                    <!-- Nivel Básico -->
-                    <section class="basic-level">
-                        <h3>Nivel Básico</h3>
-                        <p>En este nivel aprenderás los fundamentos de Micro:bit y cómo programarlo con bloques.</p>
-                        <a href="#" class="btn" aria-label="Comenzar el Nivel Básico">Comenzar</a>
-                    </section>
-                    
-                    <!-- Nivel Medio -->
-                    <section class="intermediate-level">
-                        <h3>Nivel Medio</h3>
-                        <p>En este nivel exploraremos conceptos más avanzados como el uso de sensores y comunicación inalámbrica.</p>
-                        <a href="#" class="btn" aria-label="Comenzar el Nivel Medio">Comenzar</a>
-                    </section>
-                </div>
-            </section>
-        </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido al Curso Básico de Micro:bit</h2>
+                <p>Comienza tu viaje de aprendizaje en programación y electrónica con Micro:bit. ¡Diviértete creando proyectos interactivos!</p>
+                <a href="#intro" class="btn-hero">Comienza Ahora</a>
+            </div>
+        </section>
+
+    
+
+        <section class="levels">
+            <h2>Niveles del Curso</h2>
+            <div class="grid-container">
+                <section class="level-card">
+                    <h3>Nivel Básico</h3>
+                    <p>Aprende los fundamentos de Micro:bit y cómo programarlo con bloques.</p>
+                    <a href="#" class="btn">Comenzar</a>
+                </section>
+                <section class="level-card">
+                    <h3>Nivel Medio</h3>
+                    <p>Explora sensores y comunicación inalámbrica para crear proyectos más avanzados.</p>
+                    <a href="#" class="btn">Comenzar</a>
+                </section>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

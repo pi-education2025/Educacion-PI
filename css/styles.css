@@ -1,314 +1,301 @@
-/* ================================================== */
-/* Variables globales                                 */
-/* ================================================== */
+/* Variables globales */
 :root {
-    --blanco: #ffffff; /* Color blanco para fondos y textos */
-    --oscuro: #212121; /* Color oscuro para textos */
-    --verdeOscuro: #16a34a; /* Verde oscuro para acentos */
-    --verdeClaro: #22c55e; /* Verde claro para acentos */
-    --verdeGradient: linear-gradient(135deg, var(--verdeOscuro), var(--verdeClaro)); /* Gradiente verde para fondos */
-    --fuente-base: 'Segoe UI', sans-serif; /* Fuente principal */
-    --spacing-base: 1.5rem; /* Espaciado base para márgenes y paddings */
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra base para tarjetas y botones */
-    --sombra-hover: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada para efectos hover */
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --verdeOscuro: #16a34a;
+    --verdeClaro: #22c55e;
+    --verdeGradient: linear-gradient(135deg, var(--verdeOscuro), var(--verdeClaro));
+    --fuente-base: 'Roboto', sans-serif;
+    --spacing-base: 1.5rem;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ================================================== */
-/* Reset y estilos globales                           */
-/* ================================================== */
+/* Reset y Estilos Globales */
 html {
-    font-size: 62.5%; /* 1rem = 10px para facilitar cálculos */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit; /* Hereda el box-sizing para todos los elementos */
+    box-sizing: inherit;
 }
 
 body {
-    font-family: var(--fuente-base); /* Usa la fuente base definida en las variables */
-    background-color: var(--blanco); /* Fondo blanco */
-    color: var(--oscuro); /* Texto oscuro */
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el padding por defecto */
-    min-height: 100vh; /* Altura mínima de la ventana del navegador */
-    display: flex; /* Usa Flexbox para el layout */
-    flex-direction: column; /* Organiza los elementos en columna */
-    line-height: 1.6; /* Interlineado para mejorar la legibilidad */
+    font-family: var(--fuente-base);
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
 }
 
-/* ================================================== */
-/* Header                                             */
-/* ================================================== */
+/* Header */
 header {
-    background: var(--blanco); /* Fondo con gradiente verde */
-    padding: var(--spacing-base) 0; /* Espaciado interno */
-    box-shadow: var(--sombra); /* Sombra para dar profundidad */
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
 }
 
 .header-content {
-    display: flex; /* Usa Flexbox para alinear logo y texto */
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
-    align-items: center; /* Centra verticalmente los elementos */
-    gap: var(--spacing-base); /* Espacio entre el logo y el texto */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 0 var(--spacing-base); /* Espaciado interno */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
 }
 
-.header-content .logo {
-    max-width: 80px; /* Tamaño máximo del logo */
-    /* filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); Sombra para el logo */
+.logo {
+    max-width: 80px;
+    height: auto;
 }
 
-header p {
-    font-size: 2.8rem; /* Tamaño de fuente grande para el título */
-    color: var(--verdeOscuro); /* Texto blanco */
-    font-weight: 600; /* Grosor de la fuente */
-    margin: 0; /* Elimina el margen por defecto */
-    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el texto */
+.header-text p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-header .course-title {
-    font-size: 2rem; /* Tamaño de fuente para el subtítulo */
-    color: var(--blanco); /* Texto blanco */
-    font-weight: 400; /* Grosor de la fuente */
-    margin: 0; /* Elimina el margen por defecto */
-    opacity: 0.9; /* Ligera transparencia */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el texto */
+/* Variables globales */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --verdeOscuro: #16a34a;
+    --verdeClaro: #22c55e;
+    --verdeGradient: linear-gradient(135deg, var(--verdeOscuro), var(--verdeClaro));
+    --fuente-base: 'Roboto', sans-serif;
+    --spacing-base: 1.5rem;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ================================================== */
-/* Main                                               */
-/* ================================================== */
-main {
-    padding: 4rem 2rem; /* Espaciado interno */
-    text-align: center; /* Centra el texto */
-    flex-grow: 1; /* Ocupa el espacio restante */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    width: 100%; /* Ancho completo */
+/* Reset y Estilos Globales */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 4rem; /* Tamaño de fuente grande para el título principal */
-    margin-bottom: 2rem; /* Espaciado inferior */
-    color: var(--verdeOscuro); /* Color verde oscuro */
-    font-weight: 700; /* Grosor de la fuente */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-h2 {
-    font-size: 3.2rem; /* Tamaño de fuente para subtítulos */
-    color: var(--verdeOscuro); /* Color verde oscuro */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
+body {
+    font-family: var(--fuente-base);
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
 }
 
-h3 {
-    font-size: 2.8rem; /* Tamaño de fuente para títulos de sección */
-    color: var(--verdeClaro); /* Color verde claro */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
 }
 
-.section-container {
-    display: flex; /* Usa Flexbox para organizar las secciones */
-    flex-direction: column; /* Organiza los elementos en columna */
-    gap: var(--spacing-base); /* Espacio entre las secciones */
-    align-items: center; /* Centra los elementos horizontalmente */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
 }
 
-/* ================================================== */
-/* Sección de bienvenida                              */
-/* ================================================== */
-.intro-section {
-    width: 100%; /* Ancho completo */
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centra la sección */
+.logo {
+    max-width: 80px;
+    height: auto;
 }
 
-.intro-section h2 {
-    font-size: 3.2rem; /* Tamaño de fuente para el título */
-    color: var(--verdeOscuro); /* Color verde oscuro */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
+.header-text p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.intro-section p {
-    font-size: 2.4rem; /* Tamaño de fuente aumentado para el párrafo */
-    line-height: 1.8; /* Interlineado mejorado */
-    color: var(--oscuro); /* Color oscuro para el texto */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
-    text-align: justify; /* Centra el texto */
+/* Sección Hero */
+.hero {
+    background-image: url('../imagenes/5.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Altura ajustable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+    position: relative;
 }
 
-/* ================================================== */
-/* Contenedor de niveles                               */
-/* ================================================== */
+.hero::before {
+    content: ''; /* Pseudo-elemento sin contenido */
+    position: absolute; /* Posiciona encima de la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Color negro con 40% de opacidad */
+    z-index: 1; /* Coloca la capa sobre la imagen pero debajo del contenido */
+}
+
+.hero-content {
+    max-width: 1200px;
+    padding: 20px;
+    z-index: 2; /* Asegura que el contenido esté encima de la capa */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    background-color: var(--verdeClaro);
+    color: var(--blanco);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background-color: var(--verdeOscuro);
+}
+
+
+/* Sección de Niveles */
 .levels {
-    width: 100%; /* Ancho completo */
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 0 var(--spacing-base); /* Espaciado interno */
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    text-align: center;
 }
 
 .levels h2 {
-    font-size: 3.2rem; /* Tamaño de fuente para el título */
-    color: var(--verdeOscuro); /* Color verde oscuro */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
-    text-align: center; /* Centra el texto */
+    font-size: 3rem;
+    color: var(--verdeOscuro);
+    margin-bottom: 5rem;
 }
 
 .grid-container {
-    display: grid; /* Usa CSS Grid para organizar las tarjetas */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
-    gap: var(--spacing-base); /* Espacio entre las tarjetas */
-    width: 100%; /* Ancho completo */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
 }
 
-.grid-container section {
-    background: var(--blanco); /* Fondo blanco */
-    border-radius: 12px; /* Bordes redondeados */
-    padding: var(--spacing-base); /* Espaciado interno */
-    box-shadow: var(--sombra); /* Sombra para dar profundidad */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-    display: flex; /* Usa Flexbox para organizar el contenido */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: justify; /* justifica el texto */
+.level-card {
+    background: var(--blanco);
+    padding: var(--spacing-base);
+    box-shadow: var(--sombra);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-container section:hover {
-    transform: translateY(-5px); /* Eleva la tarjeta al hacer hover */
-    box-shadow: var(--sombra-hover); /* Aumenta la sombra al hacer hover */
+.level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
 }
 
-.grid-container h3 {
-    font-size: 2.8rem; /* Tamaño de fuente para el título */
-    color: var(--verdeClaro); /* Color verde claro */
-    margin-bottom: var(--spacing-base); /* Espaciado inferior */
+.level-card h3 {
+    font-size: 2.4rem;
+    color: var(--verdeClaro);
 }
 
-.grid-container p {
-    font-size: 2rem; /* Tamaño de fuente para el texto */
-    color: var(--oscuro); /* Color oscuro */
-    line-height: 1.6; /* Interlineado */
-    margin-bottom: 2.5rem; /* Espaciado inferior */
+.level-card p {
+    font-size: 1.8rem;
+    color: var(--oscuro);
 }
 
-/* ================================================== */
-/* Botón                                              */
-/* ================================================== */
+/* Botón */
 .btn {
-    display: inline-block; /* Hace que el botón sea inline pero con propiedades de bloque */
-    padding: 1.2rem 2.5rem; /* Espaciado interno */
-    font-size: 2rem; /* Tamaño de fuente */
-    font-weight: 600; /* Grosor de la fuente */
-    color: var(--blanco); /* Texto blanco */
-    background: var(--verdeGradient); /* Fondo con gradiente */
-    border: none; /* Sin bordes */
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-decoration: none; /* Sin subrayado */
-    transition: all 0.3s ease; /* Transición suave */
-    box-shadow: var(--sombra); /* Sombra para dar profundidad */
-    position: relative; /* Posición relativa para efectos */
-    overflow: hidden; /* Oculta el contenido que se desborda */
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background: var(--verdeGradient);
+    color: var(--blanco);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.btn::before {
-    content: ''; /* Contenido vacío para el pseudo-elemento */
-    position: absolute; /* Posición absoluta dentro del botón */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    width: 300%; /* Ancho inicial */
-    height: 300%; /* Alto inicial */
-    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    transform: translate(-50%, -50%) rotate(45deg); /* Rota y centra */
-    transition: all 0.5s ease; /* Transición suave */
-    z-index: 1; /* Coloca el pseudo-elemento detrás del texto */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-hover);
 }
 
-.btn:hover::before {
-    width: 0; /* Reduce el ancho al hacer hover */
-    height: 0; /* Reduce el alto al hacer hover */
-}
-
-.btn:hover, .btn:focus {
-    transform: translateY(-3px); /* Eleva el botón al hacer hover */
-    box-shadow: var(--sombra-hover); /* Aumenta la sombra al hacer hover */
-}
-
-.btn:active {
-    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
-    box-shadow: var(--sombra); /* Restaura la sombra al hacer clic */
-}
-
-.btn span {
-    position: relative; /* Posición relativa para el texto */
-    z-index: 2; /* Coloca el texto sobre el pseudo-elemento */
-}
-
-/* ================================================== */
-/* Footer                                             */
-/* ================================================== */
+/* Footer */
 footer {
-    background: var(--blanco); /* Fondo con gradiente */
-    color: var(--verdeOscuro); /* Texto blanco */
-    text-align: center; /* Centra el texto */
-    padding: var(--spacing-base) 0; /* Espaciado interno */
-    margin-top: auto; /* Empuja el footer al final */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior */
-    border-radius: 1rem;
+    background-color: var(--blanco);
+    color: var(--verdeOscuro);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
 }
 
-footer p {
-    font-size: 1.6rem; /* Tamaño de fuente */
-    margin: 0; /* Elimina el margen por defecto */
-    opacity: 0.9; /* Ligera transparencia */
-}
-
-/* ================================================== */
-/* Responsividad                                      */
-/* ================================================== */
+/* Media Queries */
 @media (min-width: 768px) {
-    /* Ajustes para tablets y escritorios */
-    main {
-        padding: 6rem 3rem; /* Aumenta el espaciado interno */
+    .hero h2 {
+        font-size: 4rem;
     }
 
-    h1 {
-        font-size: 4.8rem; /* Aumenta el tamaño de fuente */
-    }
-
-    h2 {
-        font-size: 3.6rem; /* Aumenta el tamaño de fuente */
-    }
-
-    h3 {
-        font-size: 3rem; /* Aumenta el tamaño de fuente */
+    .hero p {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 767px) {
-    /* Ajustes para móviles */
-    h1 {
-        font-size: 3.2rem; /* Reduce el tamaño de fuente */
+    .hero h2 {
+        font-size: 3rem;
     }
 
-    h2 {
-        font-size: 2.8rem; /* Reduce el tamaño de fuente */
+    .hero p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--blanco);
+    color: var(--verdeOscuro);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .hero h2 {
+        font-size: 4rem;
     }
 
-    h3 {
-        font-size: 2.4rem; /* Reduce el tamaño de fuente */
+    .hero p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero h2 {
+        font-size: 3rem;
     }
 
-    .btn {
-        font-size: 1.8rem; /* Reduce el tamaño de fuente */
-        padding: 1rem 2rem; /* Reduce el espaciado interno */
-    }
-
-    .intro-section p {
-        font-size: 2rem; /* Reduce el tamaño de fuente */
-        line-height: 1.6; /* Ajusta el interlineado */
+    .hero p {
+        font-size: 1.6rem;
     }
 }
