@@ -178,6 +178,68 @@ header {
 }
 
 
+/* seccion de introduccion */
+
+.introduction {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--blanco);
+    margin: 40px 0;
+}
+
+.introduction .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos base */
+.introduction h2 {
+    font-size: 2rem;
+    color: var(--verdeOscuro);
+    margin-bottom: 15px;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    color: var(--oscuro);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* 🔹 RESPONSIVE 🔹 */
+@media (max-width: 768px) {
+    .introduction h2 {
+        font-size: 1.8rem; /* Reduce un poco el tamaño en tablets */
+    }
+    .introduction p {
+        font-size: 1rem; /* Texto más compacto en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .introduction {
+        padding: 30px 15px; /* Menos espacio en móviles */
+    }
+    .introduction h2 {
+        font-size: 1.5rem; /* Reduce más el tamaño en móviles */
+    }
+    .introduction p {
+        font-size: 0.95rem; /* Texto más compacto */
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .introduction h2 {
+        font-size: 3.6rem; /* Más grande en pantallas grandes */
+    }
+    .introduction p {
+        font-size: 2rem; /* Texto más cómodo de leer */
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
 /* Sección de Niveles */
 .levels {
     width: 100%;
@@ -205,7 +267,19 @@ header {
     box-shadow: var(--sombra);
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
 }
+
+
+.level-image {
+    width: 90%;
+    height: auto; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Corta la imagen para que siempre llene el espacio */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 
 .level-card:hover {
     transform: translateY(-5px);
@@ -239,14 +313,25 @@ header {
     box-shadow: var(--sombra-hover);
 }
 
-/* Footer */
+/* 🔹 Footer centrado con la imagen arriba */
 footer {
-    background-color: var(--blanco);
-    color: var(--verdeOscuro);
+    background-color: #222;
+    color: white;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
 }
+
+/* 🔹 Imagen centrada arriba */
+.footer-image {
+    width: 150px; /* Ajusta el tamaño según necesidad */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -299,3 +384,12 @@ footer {
         font-size: 1.6rem;
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .levels h2 {
+        font-size: 2rem;
+    }
