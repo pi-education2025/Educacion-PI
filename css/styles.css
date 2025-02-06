@@ -298,7 +298,18 @@ footer {
 }
 
 
+/* Favicon */
+@media (min-width: 0px) {
+    link[rel="icon"] {
+        content: url("../imagenes/favicon.ico");
+    }
+}
+
+
 /* Ajustes para mejorar el responsive */
+
+
+
 
 /* Header: Asegurar que el logo y el texto se alineen bien en móviles */
 @media (max-width: 600px) {
