@@ -60,41 +60,6 @@ header {
     color: #333;
 }
 
-/* Variables globales */
-:root {
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --verdeOscuro: #16a34a;
-    --verdeClaro: #22c55e;
-    --verdeGradient: linear-gradient(135deg, var(--verdeOscuro), var(--verdeClaro));
-    --fuente-base: 'Roboto', sans-serif;
-    --spacing-base: 1.5rem;
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --sombra-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Reset y Estilos Globales */
-html {
-    font-size: 62.5%; /* 1rem = 10px */
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: var(--fuente-base);
-    background-color: var(--blanco);
-    color: var(--oscuro);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-}
-
 /* Header */
 header {
     background-color: #fff;
@@ -315,8 +280,8 @@ header {
 
 /* 🔹 Footer centrado con la imagen arriba */
 footer {
-    background-color: #222;
-    color: white;
+    background-color: var(--blanco);
+    color: var(--verdeClaro);
     text-align: center;
     padding: 20px;
     display: flex;
@@ -333,63 +298,139 @@ footer {
 }
 
 
-/* Media Queries */
-@media (min-width: 768px) {
-    .hero h2 {
-        font-size: 4rem;
-    }
+/* Ajustes para mejorar el responsive */
 
-    .hero p {
+/* Header: Asegurar que el logo y el texto se alineen bien en móviles */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        max-width: 60px;
+        margin-bottom: 10px;
+    }
+    .header-text p {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 767px) {
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.6rem;
-    }
-}
-
-
-/* Footer */
-footer {
-    background-color: var(--blanco);
-    color: var(--verdeOscuro);
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: auto;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-    .hero h2 {
-        font-size: 4rem;
-    }
-
-    .hero p {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 767px) {
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.6rem;
-    }
-}
-
+/* Hero Section: Ajustar tamaño y alineación en móviles */
 @media (max-width: 768px) {
     .hero {
-        height: 40vh;
+        height: 50vh;
+        padding: 20px;
     }
+    .hero-content {
+        max-width: 90%;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
 
-    .levels h2 {
+/* Sección de Introducción: Ajustes para responsividad */
+@media (max-width: 768px) {
+    .introduction {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .introduction h2 {
         font-size: 2rem;
     }
+    .introduction p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction h2 {
+        font-size: 3.5rem;
+    }
+    .introduction p {
+        font-size: 2rem;
+        line-height: 2;
+        max-width: 800px;
+        margin: auto;
+        text-align: justify;
+    }
+}
+
+/* Sección de niveles: Mejorar la disposición en móviles */
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .level-card {
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .level-card h3 {
+        font-size: 2rem;
+    }
+    .level-card p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .level-card {
+        padding: 2.5rem;
+    }
+    .level-card h3 {
+        font-size: 2.8rem;
+    }
+    .level-card p {
+        font-size: 1.8rem;
+        line-height: 2;
+        text-align: justify;
+    }
+}
+
+/* Footer: Asegurar alineación correcta en móviles */
+@media (max-width: 600px) {
+    footer {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    .footer-image {
+        width: 120px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    .hero {
+        height: 80vh;
+    }
+    .hero-content {
+        max-width: 70%;
+    }
+    .hero h2 {
+        font-size: 4.5rem;
+    }
+    .hero p {
+        font-size: 2.2rem;
+        line-height: 2;
+        text-align: justify;
+    }
+    footer {
+        font-size: 1.8rem;
+    }
+}
