@@ -298,12 +298,6 @@ footer {
 }
 
 
-/* Favicon */
-@media (min-width: 0px) {
-    link[rel="icon"] {
-        content: url("../imagenes/favicon.ico");
-    }
-}
 
 
 /* Ajustes para mejorar el responsive */
