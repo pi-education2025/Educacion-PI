@@ -1,0 +1,200 @@
+/* ==================================================
+   ESTILOS GENERALES (comunes a todas las páginas)
+================================================== */
+:root {
+  --azul: #0288d1;
+  --azul-oscuro: #026fa1;
+  --gris-claro: #fafafa;
+  --gris: #e0e0e0;
+  --blanco: #ffffff;
+  --texto: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gris-claro);
+  color: var(--texto);
+}
+
+nav {
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--gris);
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: var(--texto);
+  margin: 0 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.boton {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.boton:hover {
+  background-color: var(--azul-oscuro);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ==================================================
+   ESTILOS PARA bienvenida.html
+================================================== */
+.section-box {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gris);
+}
+.section-box:last-child {
+  border-bottom: none;
+}
+.section-box h3 {
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+.section-box p {
+  margin-top: 0;
+}
+
+/* ======= ESTILO HORIZONTAL PARA CURSOS EN bienvenida.html ======= */
+.cursos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.curso {
+  flex: 1 1 400px;
+  min-width: 280px;
+  max-width: 450px;
+  background-color: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.curso h2 {
+  color: var(--azul);
+  margin-top: 0;
+  text-align: center;
+}
+
+.boton-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+
+/* ==================================================
+   ESTILOS PARA htdp.html
+================================================== */
+.curso-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.curso {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gris);
+}
+.curso:last-child {
+  border-bottom: none;
+}
+.curso h3 {
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+.curso p {
+  margin-top: 0;
+}
+
+/* ==================================================
+   ESTILOS PARA microbit.html
+================================================== */
+ul {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 1.5rem;
+}
+
+.curso-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.curso {
+  text-align: left;
+}
+
+
+
+/* ===== Estilo de botones centrados ===== */
+.boton-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ===== Centrado de bloques en htdp.html ===== */
+.cursos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.curso.centrado {
+  text-align: center;
+}
+
+.curso h3 {
+  color: var(--azul);
+  margin-top: 0;
+  font-size: 1.3rem;
+}
