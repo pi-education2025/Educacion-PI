@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bienvenidos a Educación Pi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/bienvenida.css" />
+  <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <nav role="navigation" aria-label="Menú principal">
+    <div class="nav-logo">
+      <img src="https://www.pi.com.ve/assets/logo-cea72424.svg" alt="Logo Pi" />
+      <span>Educación Pi</span>
+    </div>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-expanded="false"
+      aria-controls="nav-enlaces"
+      aria-label="Abrir menú"
+      type="button"
+    >
+      ☰
+    </button>
+
+    <ul class="nav-enlaces" id="nav-enlaces">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="htdp.html">¿Cómo Diseñar Programas?</a></li>
+      <li><a href="microbit.html">Microbit</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Bienvenidos a Educación Pi</h1>
+    <p>Explora nuestros cursos interactivos de programación y electrónica educativa.</p>
+  </header>
+
+  <main>
+    <section class="cursos-container" aria-label="Cursos disponibles">
+      <!-- Curso HTDP -->
+      <article class="curso" tabindex="0" aria-labelledby="titulo-htdp" role="region">
+        <div class="curso-content">
+          <h2 id="titulo-htdp">¿Cómo Diseñar Programas?</h2>
+          <p>
+            Aprende a diseñar programas de forma estructurada, paso a paso. Ideal para comenzar en el mundo
+            de la programación.
+          </p>
+          <img src="imagenes/Racket2.png" alt="Representación del curso Cómo Diseñar Programas" class="curso-imagen" />
+          <div class="boton-container">
+            <a href="htdp.html" class="boton" role="link">Ver curso</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Curso Microbit -->
+      <article class="curso" tabindex="0" aria-labelledby="titulo-microbit" role="region">
+        <div class="curso-content">
+          <h2 id="titulo-microbit">Microbit</h2>
+          <p>
+            Comienza tu viaje de aprendizaje en programación y electrónica con Micro:bit. ¡Diviértete creando proyectos
+            interactivos!
+          </p>
+          <img src="imagenes/microbit2.png" alt="Imagen ilustrativa del curso Microbit" class="curso-imagen" />
+          <div class="boton-container">
+            <a href="microbit.html" class="boton" role="link">Ver curso</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Agropezim Group C.A. RIF: J-404095969</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
